@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray: {
+                "100": "#131313",
+                "200": "rgba(255, 255, 255, 0.39)",
+                "300": "rgba(255, 255, 255, 0.1)",
+                "400": "rgba(255, 255, 255, 0.5)",
+                "500": "rgba(19, 19, 19, 0.5)",
+              },
+              darkslateblue: "#005aac",
+              goldenrod: "#efb722",
+              mediumseagreen: "#0d9958",
+              white: "#fff",
+            },
+            spacing: {},
+            fontFamily: {
+              roboto: "Roboto",
+              bungee: "Bungee",
+              inter: "Inter",
+            },
+          },
+          screens: {
+            sm: {
+              raw: "screen and (min-width: 321px)",
+            },
+            md: {
+              raw: "screen and (min-width: 721px)",
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <div class="w-full h-screen relative bg-gray-100 overflow-hidden flex flex-col items-center justify-start">
+      <img class="w-full md:w-[550px] absolute top-[0px]  object-contain" alt="" src="/public/bg.svg" />
+      <section class="flex flex-col items-start justify-start gap-6 p-8 ">
+        <div class="flex flex-row justify-center items-center ">
+          <img class="w-[155px] h-[58px] mt-32 relative overflow-hidden shrink-0 object-contain z-[3]" alt="" src="/public/bananaGamesLogo.png" />
+          <img class="md:w-[300px] sm:w-[200px] object-contain z-[4]" alt="" src="/public/banana.svg" />
+        </div>
+        <div class="leading-[34px] uppercase z-[3] text-left text-[27.3px] text-white font-bungee">
+          <p>Feito por brasileiros</p>
+          <p>para brasileiros!</p>
+        </div>
+        <div class="flex flex-row items-center justify-center z-10 ">
+          <div class=" bg-mediumseagreen w-12 h-[3px]"></div>
+          <div class=" bg-goldenrod w-12 h-[3px]"></div>
+          <div class=" bg-darkslateblue w-12 h-[3px]"></div>
+        </div>
+        <div class="w-full flex flex-row items-start gap-20  my-6 leading-[normal] tracking-[normal] text-left text-base text-gray-400 font-roboto z-[3]">
+          <a href="https://www.banana.games" class="hover:underline">www.banana.games</a>
+          <p>talk@banana.games</p>
+        </div>
+      </section>
+
+
+      
+    </section>
+    </div>
+  </body>
+</html>

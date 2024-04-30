@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray: {
+                "100": "#131313",
+                "200": "rgba(255, 255, 255, 0.39)",
+                "300": "rgba(255, 255, 255, 0.1)",
+                "400": "rgba(255, 255, 255, 0.5)",
+                "500": "rgba(19, 19, 19, 0.5)",
+              },
+              white: "#fff",
+            },
+            fontFamily: {
+              roboto: "Roboto",
+              bungee: "Bungee",
+              inter: "Inter",
+            },
+            borderRadius: {
+              "5xs-5": "7.5px",
+              "base-1": "15px",
+            },
+          },
+          fontSize: {
+            base: "16px",
+            "sm": "9.4px",
+            "base-1": "15px",
+          },
+          screens: {
+            sm: {
+              raw: "screen and (min-width: 321px)",
+            },
+            md: {
+              raw: "screen and (min-width: 721px)",
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-gray-100 overflow-hidden flex flex-col items-center justify-center px-[33px] gap-6 leading-[normal] tracking-[normal]">
+      <section style="background-image: url(/public/bingolarCard.svg);" class="bg-no-repeat bg-cover sm:w-[400px] sm:h-[200px] md:w-[600px] md:h-[300px] flex flex-row flex-wrap items-center justify-between px-8 py-4 text-left text-base-1 text-white font-bungee rounded-3xl">
+        <div class="w-fit flex flex-col items-start justify-start py-0 pr-px pl-0 box-border gap-[8.9px]">
+          <div style="background-image: url(/public/yellowRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 2y </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Lifetime </div>
+          </div>
+          <div style="background-image: url(/public/yellowRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 2y </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Lifetime </div>
+          </div>
+          <div style="background-image: url(/public/yellowRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 2y </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Lifetime </div>
+          </div>
+        </div>
+        <div class="w-[220px] flex flex-col items-start justify-start pt-[21.6px] px-0 pb-0 box-border text-right text-sm font-inter">
+          <div class=" flex flex-col items-end justify-start gap-[11.3px]">
+            <div class="flex flex-row items-start justify-end py-0 pr-[5.6px] pl-1.5">
+              <img class="md:w-[150px] sm:w-[100px] relative overflow-hidden shrink-0 object-cover z-[2]" loading="lazy" alt="" src="/public/bingolarLogo.svg" />
+            </div>
+            <div class="  z-[2]">
+              <p class="md:text-base sm:text-[12px]">The largest live bingo in Brazil, thousands of active users every day. Free cards, cashback, special rounds. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-image: url(/public/starlightCard.svg);" class="bg-no-repeat bg-cover sm:w-[400px] sm:h-[200px] md:w-[600px] md:h-[300px] flex flex-row flex-wrap items-center justify-between px-8 py-4 text-left text-base-1 text-white font-bungee rounded-3xl">
+        <div class="w-[220px] flex flex-col items-start justify-start pt-[21.6px] px-0 pb-0 box-border text-left text-sm font-inter">
+          <div class=" flex flex-col items-start justify-start gap-[11.3px]">
+            <div class="flex flex-row items-start justify-start py-0 ">
+              <img class="md:w-[150px] sm:w-[100px] relative overflow-hidden shrink-0 object-cover z-[2]" loading="lazy" alt="" src="/public/starlightLogo.svg" />
+            </div>
+            <div class=" z-[2]">
+              <p class="md:text-base sm:text-[12px]">An interactive roulette where the content is generated by the presenters, with multipliers of 24/7 up to 500x! </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-fit flex flex-col items-start justify-start py-0 pr-px pl-0 box-border gap-[8.9px]">
+          <div style="background-image: url(/public/purpleRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 97% </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> RTP </div>
+          </div>
+          <div style="background-image: url(/public/purpleRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 500X </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Multiples </div>
+          </div>
+          <div style="background-image: url(/public/purpleRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 24/7 </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Available </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-image: url(/public/showtimeCard.svg);" class="bg-no-repeat bg-cover sm:w-[400px] sm:h-[200px] md:w-[600px] md:h-[300px] flex flex-row flex-wrap items-center justify-between px-8 py-4 text-left text-base-1 text-white font-bungee rounded-3xl">
+        <div class="w-fit flex flex-col items-start justify-start py-0 pr-px pl-0 box-border gap-[8.9px]">
+          <div style="background-image: url(/public/redRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 96% </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> RTP </div>
+          </div>
+          <div style="background-image: url(/public/redRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 10K </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Live Users </div>
+          </div>
+          <div style="background-image: url(/public/redRectangle.svg)" class="bg-no-repeat bg-cover [backdrop-filter:blur(3.75px)] sm:w-[80px] sm:h-[48px] md:w-[130px] md:h-[76px] flex flex-col items-start justify-start pl-2  md:gap-6 sm:gap-1 sm z-[2]">
+            <div class="h-[26px] md:text-[26px] sm:text-[18px] z-[1]"> 1K </div>
+            <div class="h-[7px] md:text-base sm:text-[12px] font-roboto z-[1]"> Daily Rounds </div>
+          </div>
+        </div>
+        <div class="w-[220px] flex flex-col items-start justify-start pt-[21.6px] px-0 pb-0 box-border text-right text-sm font-inter">
+          <div class=" flex flex-col items-end justify-start gap-[11.3px]">
+            <div class="flex flex-row items-start justify-end py-0 pr-[5.6px] pl-1.5">
+              <img class="md:w-[150px] sm:w-[100px] relative overflow-hidden shrink-0 object-cover z-[2]" loading="lazy" alt="" src="/public/showtimeLogo.svg" />
+            </div>
+            <div class="  z-[2]">
+              <p class="md:text-base sm:text-[12px]">A fun and captivating atmosphere in a classic casino game now available at the users' fingertips. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
